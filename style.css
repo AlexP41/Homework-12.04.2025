@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+thead {
+    background: linear-gradient(to bottom , #3f3f3f, #202020);
+    border-bottom: 2px solid #3A3A3C;
+}
+thead th:nth-child(3) {
+    position: relative;
+    overflow: hidden;
+}
+
+thead th:nth-child(3)::after {
+    content: "Best!";
+    color: red;
+    font-size: 1rem;
+    font-weight: 700;
+    background: linear-gradient(to bottom , yellow, orange);
+    padding: 0.5rem;
+    top: 0;
+    right: 0;
+    position: absolute;
+
+    padding : 0.25rem 4rem;
+    transform: translate(35%, 35%) rotate(45deg);
+}
+
+tbody tr:first-child td {
+  background: linear-gradient(to bottom, #3f3f3f, #202020);
+  border-bottom: 2px solid #3A3A3C;
+}
+
+tbody tr:last-child td {
+  background: linear-gradient(to bottom, #f4f4f4, #d5d5d5);
+  padding: 2.4rem 0;
+}
+
+tbody tr:first-child td {
+    color: #888;
+    font-size: 2.4rem;
+    padding: 1.5rem;
+}
+
+/* Центруємо текст в усіх клітинках, окрім першого рядка і першої колонки */
+thead th, tbody tr:not(:first-child) td:not(:first-child) {
+  text-align: center; /* Центрує текст по горизонталі */
+  vertical-align: middle; /* Центрує текст по вертикалі */
+}
+
+tbody tr:first-child div  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+tbody tr:first-child div p:first-child {
+    font-size: 3.6rem;
+    color: #888;
+}
+
+tbody tr:first-child div p:last-child {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+span {
+    color: #60C1CF;
+}
+
+th {
+    color: #888;
+    font-size: 1.8rem;
+}
+
+
+tbody tr:nth-child(odd) td:nth-child(odd) {
+    background-color: #e3e3e3;
+}
+
+tbody tr:nth-child(odd) td:nth-child(even) {
+    background-color: #ebebeb;
+}
+
+tbody tr:nth-child(even) td:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+
+tbody tr:nth-child(even) td:nth-child(even) {
+    background-color: #fff;
+}
+
+tbody tr:hover{
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+
+ion-icon[name="close-outline"] {
+    color: red;
+    font-size: 2.4rem;
+     font-weight: 700;
+}
+
+ion-icon[name="checkmark"] {
+    color: green;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+button {
+    background-color: transparent;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
